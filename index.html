@@ -74,7 +74,7 @@
         </section>
         <section id="about" itemscope itemtype="http://schema.org/Thing">
             <h2 class="about__title" itemprop="name">БАНК БЕЗ МЕЖ</h2>
-            <div class="about__box">
+            <div class="wrap">
                 <div class="about__content">
                     <h3>Скільки коштує?</h3>
                     <p itemprop="description">Треба подивитися по запиту "скільки коштує монополія банк без меж"</p>
@@ -86,7 +86,7 @@
         </section>
         <section id="photo" itemscope itemtype="http://schema.org/ItemList">
             <h2 class="photo__title">ФОТО</h2>
-            <div class="photo__box">
+            <div class="wrap">
                 <ol class="photo__list" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                     <li class="photo__item" itemprop="item" itemscope itemtype="http://schema.org/ImageObject">
                         <img src="/images/monopoly_1.jpg" loading="lazy" alt="фотографія гри">
@@ -162,23 +162,25 @@
         </section>
         <section id="delivery">
             <h2 class="delivery__title">ДОСТАВКА</h2>
-            <div class="delivery__option">
-                <h3>Оплата</h3>
-                <div class="delivery__img">
-                    <img src="/image/card.jpg" alt="кредитна карта">
-                    <img src="/image/cash.jpg" alt="готівка">
+            <div class="wrap">
+                <div class="delivery__option">
+                    <h3>Оплата</h3>
+                    <div class="delivery__img">
+                        <img src="/image/card.jpg" alt="кредитна карта">
+                        <img src="/image/cash.jpg" alt="готівка">
+                    </div>
+                    <p>Ми приймаємо і онлайн через кредитну карту, і готівкою при наложеному платежі.</p>
+                    <div class="advice">Ви можете придбати монополію: <h6>львів</h6>, <h6>київ</h6>, <h6>тернопіль</h6> та в інших містах <h6>України</h6>.</div>
                 </div>
-                <p>Ми приймаємо і онлайн через кредитну карту, і готівкою при наложеному платежі.</p>
-                <div class="advice">Ви можете придбати монополію: <h6>львів</h6>, <h6>київ</h6>, <h6>тернопіль</h6> та в інших містах <h6>України</h6>.</div>
-            </div>
-            <div class="delivery__option">
-                <h3>Повернення</h3>
-                <div class="delivery__img">
-                    <img src="/image/nova.jpg" alt="нова пошта">
-                    <img src="/image/ukr.jpg" alt="укр пошта">
+                <div class="delivery__option">
+                    <h3>Повернення</h3>
+                    <div class="delivery__img">
+                        <img src="/image/nova.jpg" alt="нова пошта">
+                        <img src="/image/ukr.jpg" alt="укр пошта">
+                    </div>
+                    <p>Ми відправляємо і новою поштою, і укр поштою.</p>
+                    <div class="advice">Відсутність ознак використання товару, забруднень, сторонніх запахів; наявність ярликів; збережений товарний вигляд.</div>
                 </div>
-                <p>Ми відправляємо і новою поштою, і укр поштою.</p>
-                <div class="advice">Відсутність ознак використання товару, забруднень, сторонніх запахів; наявність ярликів; збережений товарний вигляд.</div>
             </div>
             <button class="button__buy">КУПИТИ</button>
         </section>
@@ -186,48 +188,50 @@
     <div id="modal">
         <div class="modal__content">
             <h2 class="modal__title">Замовити Монополію</h2>
-            <div class="modal__choice">
-                <strong>Оплата:</strong>
-                <div>
-                    <input type="radio" id="choiceCash" name="payment" value="cash">
-                    <label for="choiceCash">Готівка</label>
+            <div class="wrap">
+                <div class="modal__choice">
+                    <strong>Оплата:</strong>
+                    <div>
+                        <input type="radio" id="choiceCash" name="payment" value="cash">
+                        <label for="choiceCash">Готівка</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="choiceCard" name="payment" value="card">
+                        <label for="choiceCard">Кредитна карта</label>
+                    </div>
+                    <hr>
+                    <strong>Доставка:</strong>
+                    <div>
+                        <input type="radio" id="choiceNova" name="service" value="nova">
+                        <label for="choiceNova">Нова пошта</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="choiceUkr" name="service" value="ukr">
+                        <label for="choiceUkr">Укр пошта</label>
+                    </div>
                 </div>
-                <div>
-                    <input type="radio" id="choiceCard" name="payment" value="card">
-                    <label for="choiceCard">Кредитна карта</label>
-                </div>
-                <hr>
-                <strong>Доставка:</strong>
-                <div>
-                    <input type="radio" id="choiceNova" name="service" value="nova">
-                    <label for="choiceNova">Нова пошта</label>
-                </div>
-                <div>
-                    <input type="radio" id="choiceUkr" name="service" value="ukr">
-                    <label for="choiceUkr">Укр пошта</label>
-                </div>
-            </div>
-            <div class="modal__contact">
-                <form id="formSubmit" class="contact__form" action="/submit" method="post">
-                    <input type="text" id="name" name="name" placeholder="Прізвище Ім'я" required>
-                    <input type="tel" id="phone" name="phone" placeholder="067 35 55 499" required>
-                    <input type="text" id="town" name="town" placeholder="Місто" required>
-                    <input type="text" id="post" name="post" placeholder="Відділеня НП або УП" required>
-                    <input type="hidden" id="payment" value="cash">
-                    <input type="hidden" id="service" value="nova">
-                    <input type="submit" value="Готово">
-                </form>
-                <div class="contact__or">- або -</div>
-                <div class="contact__social">
-                    <a href="olx.ua" target="_blank">
-                        <h4>OLX</h4>
-                    </a>
-                    <a href="t.me/kobets_inc" target="_blank">
-                        <h4>Телеграм</h4>
-                    </a>
-                    <a href="#" target="_blank">
-                        <h4>Вайбер</h4>
-                    </a>
+                <div class="modal__contact">
+                    <form id="formSubmit" class="contact__form" action="/submit" method="post">
+                        <input type="text" id="name" name="name" placeholder="Прізвище Ім'я" required>
+                        <input type="tel" id="phone" name="phone" placeholder="067 35 55 499" required>
+                        <input type="text" id="town" name="town" placeholder="Місто" required>
+                        <input type="text" id="post" name="post" placeholder="Відділеня НП або УП" required>
+                        <input type="hidden" id="payment" value="cash">
+                        <input type="hidden" id="service" value="nova">
+                        <input type="submit" value="Готово">
+                    </form>
+                    <div class="contact__or">- або -</div>
+                    <div class="contact__social">
+                        <a href="olx.ua" target="_blank">
+                            <h4>OLX</h4>
+                        </a>
+                        <a href="t.me/kobets_inc" target="_blank">
+                            <h4>Телеграм</h4>
+                        </a>
+                        <a href="#" target="_blank">
+                            <h4>Вайбер</h4>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
