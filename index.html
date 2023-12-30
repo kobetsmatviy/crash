@@ -10,7 +10,7 @@
     <meta property="og:description" content="Купуйте Монополію - гра для друзів (2-6 гравців)! Швидка доставка (1-2 дні), хороша ціна. Перегляньте фотографії та купуйте монополію на подарунок (1200+ замовлень)!"/>
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.monolopytut.com/" />
-    <meta property="og:image" content="https://www.monolopytut.com/images/name.jpg" />
+    <meta property="og:image" content="https://www.monolopytut.com/image/monopoly.png" />
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="application/ld+json">
         {
@@ -46,7 +46,7 @@
             <nav class="nav" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
                 <a href="#promo" class="nav__item" itemprop="url">КУПИТИ</a>
                 <a href="#about" class="nav__item" itemprop="url">БЕЗ МЕЖ</a>
-                <a href="#photo" class="nav__item" itemprop="url">ФОТОГРАФІЇ</a>
+                <a href="#photo" class="nav__item" itemprop="url">ФОТО</a>
                 <a href="#question" class="nav__item" itemprop="url">ЯК ГРАТИ</a>
                 <a href="#delivery" class="nav__item" itemprop="url">ДОСТАВКА</a>
             </nav>
@@ -67,8 +67,15 @@
             <div class="promo_description" itemprop="description">
                 гра для друзів на вечір, де кожен відчує себе великим бізнесменом
             </div>
+            <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <meta itemprop="priceCurrency" content="UAH">
+                <div class="promo__price" itemprop="price">
+                    <span class="price__amount">590</span>
+                    <span class="price__currency">грн</span>
+                </div>
+            </div>
             <button class="button__buy">КУПИТИ</button>
-            <span class="promo__advice">може бути у вас: <b>завтра</b></span>
+            <span class="promo__advice">може бути у вас завтра</span>
             <div class="promo__air air__left">
                 <img src="image/arrow.png" loading="lazy" alt="показати">
                 <p>супер крута монополія яку ти хочеш (бла-бла)</p>
@@ -80,14 +87,25 @@
         </section>
         <section id="about" itemscope itemtype="http://schema.org/Thing">
             <h2 class="about__title" itemprop="name">БАНК БЕЗ МЕЖ</h2>
-            <div class="wrap">
+            <div class="wrap about__box">
                 <div class="about__content">
                     <h3>Скільки коштує?</h3>
-                    <p itemprop="description">Треба подивитися по запиту "скільки коштує монополія банк без меж"</p>
+                    <p itemprop="description">
+                        Настільна гра «Монополія: Банк без Меж» коштує 590 грн.
+                        Всі інші ціни які ви можете побачити у конкурентів - це завищена вартість.
+                    </p>
                     <h3>Українською</h3>
-                    <p>Треба подивитися по запиту "монополія банк без меж українською"</p>
+                    <p>
+                        Всі об'єкти гри перекладені виключно українською.
+                        А все чому? Бо русскій воєнний корабль - іде ..    
+                    </p>
                 </div>
-                <img src="/images/monopoly_about.jpg" class="about__img" loading="lazy" itemprop="image" alt="про монополію">
+                <img src="image/monopoly_about.png" class="about__img" loading="lazy" itemprop="image" alt="монополія банк без меж">
+                <div class="about__air">
+                    <img src="image/money.png" class="air__money" loading="lazy" alt="гроші">
+                    <img src="image/money_bag.png" class="air__bag" loading="lazy" alt="мішок з грошима">
+                    <img src="image/hat.png" class="air__hat" loading="lazy" alt="капелюх">
+                </div>
             </div>
         </section>
         <section id="photo" itemscope itemtype="http://schema.org/ItemList">
@@ -95,32 +113,42 @@
             <div class="wrap">
                 <ol class="photo__list" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
                     <li class="photo__item" itemprop="item" itemscope itemtype="http://schema.org/ImageObject">
-                        <img src="/images/monopoly_1.jpg" loading="lazy" alt="фотографія гри">
+                        <img src="https://desktopgames.com.ua/games/733/MonopolyBankCard_02f.jpg" loading="lazy" alt="фотографія гри">
                         <meta itemprop="name" content="фотографія гри (детальніший опис)"/>
                     </li>
                     <li class="photo__item" itemprop="item" itemscope itemtype="http://schema.org/ImageObject">
-                        <img src="/images/monopoly_2.jpg" loading="lazy" alt="вигляд зверху">
+                        <img src="https://desktopgames.com.ua/games/733/monopoly_box.jpg" loading="lazy" alt="вигляд зверху">
                         <meta itemprop="name" content="вигляд зверху (детальніший опис)"/>
                     </li>
                     <li class="photo__item" itemprop="item" itemscope itemtype="http://schema.org/ImageObject">
-                        <img src="/images/monopoly_3.jpg" loading="lazy" alt="карточки">
+                        <img src="https://desktopgames.com.ua/games/733/MonopolyBankCard_03f.jpg" loading="lazy" alt="карточки">
                         <meta itemprop="name" content="карточки (детальніший опис)"/>
                     </li>
                     <li class="photo__item" itemprop="item" itemscope itemtype="http://schema.org/ImageObject">
-                        <img src="/images/monopoly_4.jpg" loading="lazy" alt="упаковка монополії">
+                        <img src="https://desktopgames.com.ua/games/733/MonopolyBankCard_04f.jpg" loading="lazy" alt="упаковка монополії">
                         <meta itemprop="name" content="упаковка монополії (детальніший опис)"/>
                     </li>
                     <li class="photo__item" itemprop="item" itemscope itemtype="http://schema.org/ImageObject">
-                        <img src="/images/monopoly_5.jpg" loading="lazy" alt="монополія подарунок">
+                        <img src="https://desktopgames.com.ua/games/733/MonopolyBankCard_09f.jpg" loading="lazy" alt="монополія подарунок">
                         <meta itemprop="name" content="монополія подарунок (детальніший опис)"/>
                     </li>
                 </ol>
                 <div class="photo__frame">
-                    <img src="/images/monopoly_1_big.jpg" loading="lazy" alt="фото гри">
+                    <img src="https://desktopgames.com.ua/games/733/MonopolyBankCard_02f.jpg" loading="lazy" alt="фото гри">
                 </div>
                 <div class="photo__content">
                     <h3>В Упаковці</h3>
-                    <p>Перелік того що є</p>
+                    <ul>
+                        <li>- 1 ігрове поле</li>
+                        <li>- 1 електронний банківський пристрій</li>
+                        <li>- 4 фішки</li>
+                        <li>- 4 банківські картки</li>
+                        <li>- 2 шестигранних кубика</li>
+                        <li>- 32 будинки</li>
+                        <li>- 12 готелів</li>
+                        <li>- правила гри</li>
+                        <li>- 400х265х40мм розмір коробки</li>
+                    </ul>
                     <button class="button__buy">КУПИТИ</button>
                 </div>
             </div>
@@ -131,64 +159,90 @@
                 <div class="question__item" itemscope itemprop="mainEntity" itemtype="http://schema.org/Question">
                     <dt itemprop="name">Як виграти?</dt>
                     <dd itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
-                        <span itemprop="text">Пошуковий запит "как выиграть в игре монополия"</span>
+                        <span itemprop="text">
+                            Зосередьтеся на кольорових групах, особливо оранжевих та червоних, будуйте будинки та уникайте розкиданих інвестицій.
+                        </span>
                     </dd>
+                    <img src="image/win.png" loading="lazy" alt="виграш">
                 </div>
                 <div class="question__item" itemscope itemprop="mainEntity" itemtype="http://schema.org/Question">
                     <dt itemprop="name">Які правила?</dt>
                     <dd itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
-                        <span itemprop="text">"как играть в монополию правила"</span>
+                        <span itemprop="text">
+                            Купуйте будинки та готелі, вимагайте орендну плату, торгуйтеся, уникайте банкрутства, переможець — останній гравець з грошима.
+                        </span>
                     </dd>
+                    <img src="image/rules.png" loading="lazy" alt="правила">
                 </div>
                 <div class="question__item" itemscope itemprop="mainEntity" itemtype="http://schema.org/Question">
                     <dt itemprop="name">Як роздавати гроші?</dt>
                     <dd itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
-                        <span itemprop="text">"как раздавать деньги в монополии"</span>
+                        <span itemprop="text">
+                            Гроші роздаються рівними частинами: кожен гравець отримує $1500 у різних номіналах купюр.
+                        </span>
                     </dd>
+                    <img src="image/player.png" loading="lazy" alt="гравець">
                 </div>
                 <div class="question__item" itemscope itemprop="mainEntity" itemtype="http://schema.org/Question">
                     <dt itemprop="name">Монополія в економіці?</dt>
                     <dd itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
-                        <span itemprop="text">"что такое монополия в экономике"</span>
+                        <span itemprop="text">
+                            Одна компанія контролює увесь ринок. Відсутність конкуренції, що може призводити до високих цін і обмеженого вибору для покупців.
+                        </span>
                     </dd>
+                    <img src="image/monopoly.png" loading="lazy" alt="монополія">
                 </div>
                 <div class="question__item" itemscope itemprop="mainEntity" itemtype="http://schema.org/Question">
                     <dt itemprop="name">Скільки грошей?</dt>
                     <dd itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
-                        <span itemprop="text">"сколько денег выдается в монополии"</span>
+                        <span itemprop="text">
+                            У стандартній версії гри загальна сума грошей складає $15,140.
+                        </span>
                     </dd>
+                    <img src="image/cash.png" loading="lazy" alt="сума">
                 </div>
                 <div class="question__item" itemscope itemprop="mainEntity" itemtype="http://schema.org/Question">
                     <dt itemprop="name">Як взяти кредит?</dt>
                     <dd itemprop="acceptedAnswer" itemscope itemtype="http://schema.org/Answer">
-                        <span itemprop="text">"как взять кредит в монополии"</span>
+                        <span itemprop="text">
+                            Немає офіційної можливості взяти кредит. Гравці мають керувати лише грошима, які вони мають на початку гри.
+                        </span>
                     </dd>
+                    <img src="image/credit.png" loading="lazy" alt="кредит">
                 </div>
             </dl>
         </section>
         <section id="delivery">
             <h2 class="delivery__title">ДОСТАВКА</h2>
-            <div class="wrap">
+            <div class="wrap delivery__box">
                 <div class="delivery__option">
                     <h3>Оплата</h3>
                     <div class="delivery__img">
-                        <img src="/image/card.jpg" alt="кредитна карта">
-                        <img src="/image/cash.jpg" alt="готівка">
+                        <img src="image/master_card.png" alt="кредитна карта">
+                        <img src="image/hryvna.png" alt="готівка">
                     </div>
-                    <p>Ми приймаємо і онлайн через кредитну карту, і готівкою при наложеному платежі.</p>
+                    <p>Приймаємо платежі онлайн через кредитну карту і готівкою при наложеному платежі.</p>
                     <div class="advice">Ви можете придбати монополію: <h6>львів</h6>, <h6>київ</h6>, <h6>тернопіль</h6> та в інших містах <h6>України</h6>.</div>
                 </div>
                 <div class="delivery__option">
                     <h3>Повернення</h3>
                     <div class="delivery__img">
-                        <img src="/image/nova.jpg" alt="нова пошта">
-                        <img src="/image/ukr.jpg" alt="укр пошта">
+                        <img src="image/nova_poshta.png" alt="нова пошта">
+                        <img src="image/ukrposhta.png" alt="укр пошта">
                     </div>
                     <p>Ми відправляємо і новою поштою, і укр поштою.</p>
                     <div class="advice">Відсутність ознак використання товару, забруднень, сторонніх запахів; наявність ярликів; збережений товарний вигляд.</div>
                 </div>
             </div>
             <button class="button__buy">КУПИТИ</button>
+            <div class="delivery__air air__left">
+                <img src="image/arrow.png" loading="lazy" alt="вибрати">
+                <p>найкраща в житті покупка </p>
+            </div>
+            <div class="delivery__air air__right">
+                <img src="image/arrow.png" loading="lazy" alt="вибрати">
+                <p>ми тебе не змушуємо, бо ти сам цього хочеш (:</p>
+            </div>
         </section>
     </main>
     <div id="modal">
@@ -244,7 +298,6 @@
     </div>
     <!-- CSS and JS files -->
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
