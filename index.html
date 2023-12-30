@@ -39,7 +39,7 @@
 </head>
 <body>
     <header id="header" itemscope itemtype="http://schema.org/WebSite">
-        <div class="header__box wrap">
+        <div class="header__box">
             <h3 class="logo">
                 МОНОПОЛІЯ ТУТ
             </h3>
@@ -63,13 +63,19 @@
     <main>
         <section id="promo" itemscope itemtype="http://schema.org/Product">
             <h1 class="promo__title" itemprop="name">МОНОПОЛІЯ КУПИТИ</h1>
-            <img src="/images/monopoly.jpg" class="promo__img" loading="lazy" itemprop="image" alt="монополія гра">
-            <div class="promo_description" itemprop="description">гра для друзів на вечір (прямий дотик до аудиторії)</div>
+            <img src="image/monopoly_sketch.png" class="promo__img" loading="lazy" itemprop="image" alt="монополія гра">
+            <div class="promo_description" itemprop="description">
+                гра для друзів на вечір, де кожен відчує себе великим бізнесменом
+            </div>
             <button class="button__buy">КУПИТИ</button>
-            <span class="promo__advice">Може бути у вас: <b>завтра</b></span>
-            <div class="promo__air">
-                <img src="/images/arrow.jpg" loading="lazy" alt="показати">
+            <span class="promo__advice">може бути у вас: <b>завтра</b></span>
+            <div class="promo__air air__left">
+                <img src="image/arrow.png" loading="lazy" alt="показати">
                 <p>супер крута монополія яку ти хочеш (бла-бла)</p>
+            </div>
+            <div class="promo__air air__right">
+                <img src="image/arrow.png" loading="lazy" alt="показати">
+                <p>тут можеш вибрати Гаррі Поттера</p>
             </div>
         </section>
         <section id="about" itemscope itemtype="http://schema.org/Thing">
@@ -237,6 +243,7 @@
         </div>
     </div>
     <!-- CSS and JS files -->
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </body>

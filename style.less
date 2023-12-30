@@ -1,8 +1,23 @@
 html, body {
     height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    cursor: url('cursor/default.png'), default;
 }
 
-header {
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+a, button {
+    text-decoration: none;
+    font-weight: bold;
+    color: #E75079;
+    cursor: url('cursor/pointer.png'), default;
+}
+
+#header {
     .header__box {
         display: flex;
         justify-content: space-between;
@@ -10,11 +25,13 @@ header {
     }
 
     .logo {
-
+        
     }
     .nav {
-        .nav__item {
-            margin-right: 10px;
+        font-size: 14px;
+
+        .nav__item:not(:last-child) {
+            margin-right: 15px;
         }
     }
     .lang {
@@ -25,29 +42,66 @@ header {
         flex-direction: column;
     }
 }
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 #promo {
     position: relative;
 
     .promo__title {
-
+        margin-bottom: -35px;
+        font-family: 'Rubik Mono One', sans-serif;
+        font-weight: 400;
+        font-size: 60px;
+        text-align: center;
     }
     .promo__img {
-
+        max-width: 100%;
+        max-height: 350px;
     }
     .promo_description {
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 380px;
+        height: 125px;
+        margin-top: -100px;
+        background-image: url('image/brush_pink.png');
+        background-position: 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        font-weight: bold;
+        text-align: center;
+        filter: grayscale(1);
     }
     .promo__advice {
-
+        margin-top: 10px;
+        font-size: 14px;
+        color: #333;
     }
     .promo__air {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-family: 'Caveat', cursive;
+        
+        p {
+            width: 150px;
+            font-size: 24px;
+            transform: rotate(-25deg) translate(0, -50px);
+        }
+    }
+    .air__left {
+        transform: translate(-400px, 50px);
+    }
+    .air__right {
+        top: 0;
+        transform: translate(400px, 50px);
 
+        img {
+            transform: scaleX(-1);
+            rotate: 30deg;
+        }
+        p {
+            transform: rotate(25deg) translate(0, -30px);
+        }
     }
 }
 #about {
@@ -108,8 +162,23 @@ section {
     display: flex;
 }
 .button__buy {
-    width: 100px;
+    width: 150px;
+    padding: 12px 20px;
+    background: #e75079;
+    font-family: 'Rubik Mono One', cursive;
+    font-weight: 400;
+    color: #fff;
+    outline: none;
+    border: none;
 }
 
 @media (max-width: 862px) {
+    #header {
+        .logo {
+            display: none;
+        }
+        .nav {
+            display: none;
+        }
+    }
 }
