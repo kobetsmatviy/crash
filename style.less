@@ -43,9 +43,6 @@ a, button {
             margin-right: 15px;
         }
     }
-    .lang {
-
-    }
     .phone {
         display: flex;
         flex-direction: column;
@@ -378,17 +375,107 @@ a, button {
     }
 }
 #modal {
+    position: fixed;
+    left: 0;
+    top: 0;
     display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 3;
 
     .modal__content {
-        .modal__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        padding: 20px;
+        width: auto;
+        background-color: #FEFEFE;
+        border: 1px solid #888;
+        border-radius: 15px;
+        box-shadow: 0 30px 15px -20px #333;
 
+        .modal__title {
+            font-family: 'Rubik Mono One', sans-serif;
+            font-weight: 400;
+            font-size: 40px;
+            color: #AAA;
         }
         .modal__choice {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 200px;
+            margin-right: 15px;
 
+            strong {
+                margin: 5px 0;
+                font-family: 'Rubik Mono One', sans-serif;
+                font-weight: 400;
+                font-size: 18px;
+                color: #555;
+            }
+            .choice__item {
+                display: flex;
+                align-items: center;
+
+                input {
+                    // display: none;
+                }
+                label {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    font-size: 18px;
+                    color: #555;
+                }
+
+                * {
+                    cursor: url('cursor/pointer.png'), default;
+                }
+            }
         }
         .modal__contact {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 230px;
 
+            .contact__form {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    margin-top: 5px;
+                    padding: 12px 12px;
+                    font-size: 16px;
+                    border: 5px solid #C3C3C3;
+                    outline: none;
+                    cursor: url('cursor/pointer.png'), default;
+                }
+                input[type='submit'] {
+                    padding: 12px 20px;
+                    background: #E75079;
+                    font-family: 'Rubik Mono One', cursive;
+                    font-weight: 400;
+                    color: #fff;
+                    outline: none;
+                    border: none;
+                }
+            }
+            .contact__or {
+                margin: 15px 0;
+            }
+            .contact__social {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+
+                h4 {
+                    margin: 0;
+                }
+            }
         }
     }
 }

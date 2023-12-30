@@ -251,30 +251,30 @@
             <div class="wrap">
                 <div class="modal__choice">
                     <strong>Оплата:</strong>
-                    <div>
+                    <div class="choice__item">
                         <input type="radio" id="choiceCash" name="payment" value="cash">
                         <label for="choiceCash">Готівка</label>
                     </div>
-                    <div>
+                    <div class="choice__item">
                         <input type="radio" id="choiceCard" name="payment" value="card">
                         <label for="choiceCard">Кредитна карта</label>
                     </div>
                     <hr>
                     <strong>Доставка:</strong>
-                    <div>
+                    <div class="choice__item">
                         <input type="radio" id="choiceNova" name="service" value="nova">
                         <label for="choiceNova">Нова пошта</label>
                     </div>
-                    <div>
+                    <div class="choice__item">
                         <input type="radio" id="choiceUkr" name="service" value="ukr">
                         <label for="choiceUkr">Укр пошта</label>
                     </div>
                 </div>
                 <div class="modal__contact">
                     <form id="formSubmit" class="contact__form" action="/submit" method="post">
-                        <input type="text" id="name" name="name" placeholder="Прізвище Ім'я" required>
+                        <input type="text" id="name" name="name" placeholder="Тарас Шевченко" required>
                         <input type="tel" id="phone" name="phone" placeholder="067 35 55 499" required>
-                        <input type="text" id="town" name="town" placeholder="Місто" required>
+                        <input type="text" id="town" name="town" placeholder="місто Корець" required>
                         <input type="text" id="post" name="post" placeholder="Відділеня НП або УП" required>
                         <input type="hidden" id="payment" value="cash">
                         <input type="hidden" id="service" value="nova">
@@ -298,6 +298,6 @@
     </div>
     <!-- CSS and JS files -->
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Rubik+Mono+One&display=swap" rel="stylesheet">
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
