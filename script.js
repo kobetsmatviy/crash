@@ -39,10 +39,8 @@ const choiceContainer = document.querySelector('.modal__choice');
 function updateHiddenInput(event) {
   // Перевіряємо, чи подія відбулась на радіо-кнопці
   if (event.target.type === 'radio') {
-    console.log('1');
     const name = event.target.name; // Отримуємо ім'я вибраного радіо (payment або service)
     const value = event.target.value; // Отримуємо значення вибраного радіо
-    console.log(name +' / '+ value);
 
     // Оновлюємо відповідне приховане поле у формі
     const hiddenInput = document.querySelector(`#formSubmit input[type="hidden"][id="${name}"]`);
@@ -56,3 +54,32 @@ function updateHiddenInput(event) {
 choiceContainer.addEventListener('change', updateHiddenInput);
 
 
+// Отримуємо форму за її ID
+const form = document.getElementById('formSubmit');
+
+// Функція для обробки відправлення форми
+function handleFormSubmit(event) {
+  event.preventDefault(); // Запобігаємо стандартній відправці форми
+
+  // Створюємо об'єкт FormData з нашої форми
+  const formData = new FormData(form);
+
+  // Відправляємо дані форми на сервер за допомогою fetch API
+  fetch(form.action, {
+    method: form.method,
+    body: formData
+  })
+  .then(response => response.json()) // Перетворення відповіді від сервера у JSON
+  .then(data => {
+    // Обробка даних отриманих від сервера
+    console.log(data);
+    // Тут можна, наприклад, закрити модальне вікно чи показати повідомлення про успіх
+  })
+  .catch(error => {
+    // Обробка помилок, якщо вони виникнуть
+    console.error('Error:', error);
+  });
+}
+
+// Додавання обробника подій для відправлення форми
+form.addEventListener('submit', handleFormSubmit);
