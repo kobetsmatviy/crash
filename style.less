@@ -397,6 +397,7 @@ a, button {
         box-shadow: 0 30px 15px -20px #333;
 
         .modal__title {
+            margin-top: 5px;
             font-family: 'Rubik Mono One', sans-serif;
             font-weight: 400;
             font-size: 40px;
@@ -579,6 +580,24 @@ img {
         }
         .delivery__air {
             display: none;
+        }
+    }
+    #modal {
+        .modal__content {
+            margin: 10px;
+            overflow-y: scroll;
+
+            .modal__title {
+                font-size: 30px;
+                text-align: center;
+            }
+            .modal__box {
+                flex-direction: column;
+                align-items: flex-end;
+            }
+            .modal__choice {
+                margin-right: 0;
+            }
         }
     }
 }

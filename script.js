@@ -56,6 +56,7 @@ choiceContainer.addEventListener('change', updateHiddenInput);
 
 // Отримуємо форму за її ID
 const form = document.getElementById('formSubmit');
+const submitButton = form.querySelector('input[type="submit"]');
 
 // Функція для обробки відправлення форми
 function handleFormSubmit(event) {
@@ -74,11 +75,14 @@ function handleFormSubmit(event) {
     // Обробка даних отриманих від сервера
     console.log(data);
     modal.style.display = 'none';
+    submitButton.value = 'Відправлено';
     /////////////// ПРИХОВАТИ МОДАЛЬНЕ ВІКНО І ПОКАЗАТИ ПОДЯКУ
   })
   .catch(error => {
     // Обробка помилок, якщо вони виникнуть
     console.error('Error:', error);
+    modal.style.display = 'none';
+    submitButton.value = 'Не працює';
   });
 }
 
