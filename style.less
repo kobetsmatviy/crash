@@ -419,10 +419,37 @@ a, button {
             .choice__item {
                 display: flex;
                 align-items: center;
+                margin-bottom: 5px;
 
-                input {
-                    // display: none;
+                input[type="radio"] {
+                    display: none;
                 }
+                input[type="radio"]:checked + .radio__button .check {
+                    transform: translate(-50%, -50%) scale(1);
+                }
+                .radio__button {
+                    width: 20px;
+                    height: 20px;
+                    margin-left: 10px;
+                    border-radius: 50%;
+                    background: #fff;
+                    border: 2px solid #E75079;
+                    display: inline-block;
+                    position: relative;
+
+                    .check {
+                        width: 13px;
+                        height: 13px;
+                        border-radius: 50%;
+                        background: #E75079;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%) scale(0);
+                        transition: 300ms transform ease-in-out;
+                      }
+                }
+
                 label {
                     display: flex;
                     align-items: center;
