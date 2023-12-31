@@ -19,6 +19,7 @@ buttons.forEach(function(button) {
   button.addEventListener('click', function() {
     // При кліку відкриваємо модальне вікно
     modal.style.display = 'flex';
+    modal.style.opacity = '1';
   });
 });
 
@@ -86,12 +87,27 @@ function handleFormSubmit(event) {
     console.log(data);
     submitButton.value = 'Відправлено';
     submitButton.style.background = '#4CAF50';
-    /////////////// ПРИХОВАТИ МОДАЛЬНЕ ВІКНО І ПОКАЗАТИ ПОДЯКУ
+
+    // Розпочинаємо анімацію зникнення
+    modal.style.opacity = '0';
+
+    // Після завершення анімації, повністю ховаємо модальне вікно
+    setTimeout(() => {
+        modal.style.display = 'none';
+    }, 1000); // Чекаємо 1 секунду, що відповідає тривалості анімації
   })
   .catch(error => {
     // Обробка помилок, якщо вони виникнуть
     console.error('Error:', error);
     submitButton.value = 'Не працює';
+
+    // Розпочинаємо анімацію зникнення
+    modal.style.opacity = '0';
+
+    // Після завершення анімації, повністю ховаємо модальне вікно
+    setTimeout(() => {
+        modal.style.display = 'none';
+    }, 1000); // Чекаємо 1 секунду, що відповідає тривалості анімації
   });
 }
 
