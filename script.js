@@ -1,3 +1,13 @@
+document.addEventListener("DOMContentLoaded", function() {
+  // Чекаємо завантаження всього вмісту сторінки
+  window.onload = function() {
+    // Плавно ховаємо прелоадер
+    var preloader = document.getElementById('preloader');
+    preloader.classList.add('preloader__hide');
+  }
+});
+
+
 // Знаходимо всі кнопки з класом .button__buy
 const buttons = document.querySelectorAll('.button__buy');
 
@@ -88,3 +98,18 @@ function handleFormSubmit(event) {
 
 // Додавання обробника подій для відправлення форми
 form.addEventListener('submit', handleFormSubmit);
+
+// Отримуємо батьківський елемент
+const socialContainer = document.querySelector('.contact__social');
+
+// Додаємо обробник події кліку до батьківського елемента
+socialContainer.addEventListener('click', function(event) {
+  // Перевіряємо, чи клік був зроблений на елементі з класом social__link
+  if (event.target.classList.contains('social__link')) {
+    // Отримуємо URL із атрибута data-link
+    const url = event.target.getAttribute('data-link');
+    
+    // Відкриваємо нову вкладку з цим URL
+    window.open(url, '_blank');
+  }
+});
