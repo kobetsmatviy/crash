@@ -84,14 +84,13 @@ function handleFormSubmit(event) {
   .then(data => {
     // Обробка даних отриманих від сервера
     console.log(data);
-    modal.style.display = 'none';
     submitButton.value = 'Відправлено';
+    submitButton.style.background = '#4CAF50';
     /////////////// ПРИХОВАТИ МОДАЛЬНЕ ВІКНО І ПОКАЗАТИ ПОДЯКУ
   })
   .catch(error => {
     // Обробка помилок, якщо вони виникнуть
     console.error('Error:', error);
-    modal.style.display = 'none';
     submitButton.value = 'Не працює';
   });
 }
