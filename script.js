@@ -1,3 +1,10 @@
+document.addEventListener('DOMContentLoaded', function () {
+  window.onload = function () {
+    var preloader = document.getElementById('preloader');
+    preloader.classList.add('preloader__hide');
+  };
+});
+
 const buttons = document.querySelectorAll('.button__buy');
 
 const modal = document.querySelector('#modal');
