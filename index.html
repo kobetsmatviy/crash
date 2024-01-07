@@ -22,7 +22,7 @@
             "@context": "https://schema.org",
             "@type": "Product",
             "name": "Монополія Банк Без Меж",
-            "image": "/image/monopoly.png",
+            "image": "/image/monopoly_sketch.webp",
             "description": "гра для друзів на вечір, де кожен відчує себе великим бізнесменом",
             "brand": {
                 "@type": "Thing",
@@ -31,7 +31,7 @@
             "offers": {
                 "@type": "Offer",
                 "priceCurrency": "UAH",
-                "price": "590",
+                "price": "900",
                 "itemCondition": "https://schema.org/NewCondition",
                 "availability": "https://schema.org/InStock",
                 "seller": {
@@ -77,7 +77,7 @@
             <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                 <meta itemprop="priceCurrency" content="UAH">
                 <div class="promo__price" itemprop="price">
-                    <span class="price__amount">590</span>
+                    <span class="price__amount">900</span>
                     <span class="price__currency">грн</span>
                 </div>
             </div>
@@ -98,7 +98,7 @@
                 <div class="about__content">
                     <h3>Скільки коштує?</h3>
                     <p itemprop="description">
-                        Настільна гра «Монополія: Банк без Меж» коштує 590 грн.
+                        Настільна гра «Монополія: Банк без Меж» коштує 900 грн.
                         Всі інші ціни які ви можете побачити у конкурентів - це завищена вартість.
                     </p>
                     <h3>Українською</h3>
@@ -217,8 +217,8 @@
                 <div class="delivery__option">
                     <h3>Оплата</h3>
                     <div class="delivery__img">
-                        <img src="image/master_card.png" width="65" height="40" alt="кредитна карта">
-                        <img src="image/hryvna.png" width="59" height="40" alt="готівка">
+                        <img src="image/master_card.png" width="65" height="40" loading="lazy" alt="кредитна карта">
+                        <img src="image/hryvna.png" width="59" height="40" loading="lazy" alt="готівка">
                     </div>
                     <p>Приймаємо платежі онлайн через кредитну карту і готівкою при наложеному платежі.</p>
                     <div class="advice">Ви можете придбати монополію: <h6>львів</h6>, <h6>київ</h6>, <h6>тернопіль</h6> та в інших містах <h6>України</h6>.</div>
@@ -226,8 +226,8 @@
                 <div class="delivery__option">
                     <h3>Повернення</h3>
                     <div class="delivery__img">
-                        <img src="image/nova_poshta.png" width="40" height="40" alt="нова пошта">
-                        <img src="image/ukrposhta.png" width="27" height="40" alt="укр пошта">
+                        <img src="image/nova_poshta.png" width="40" height="40" loading="lazy" alt="нова пошта">
+                        <img src="image/ukrposhta.png" width="27" height="40" loading="lazy" alt="укр пошта">
                     </div>
                     <p>Ми відправляємо і новою поштою, і укр поштою.</p>
                     <div class="advice">Відсутність ознак використання товару, забруднень, сторонніх запахів; наявність ярликів; збережений товарний вигляд.</div>
@@ -241,6 +241,19 @@
             <div class="delivery__air air__right">
                 <img src="image/arrow.png" width="195" height="150" loading="lazy" alt="вибрати">
                 <p>ми тебе не змушуємо, бо ти сам цього хочеш (:</p>
+            </div>
+        </section>
+        <section id="outreach">
+            <h2 class="outreach__title">ТАКОЖ КУПУЮТЬ</h2>
+            <div class="outreach__list">
+                <a href="https://shahmatytut.com/" rel="dofollow" class="outreach__item">
+                    <img src="image/shahmatytut_com.webp" width="317" height="200" loading="lazy" alt="шахмати" />
+                    <span class="outreach__name">ШАХМАТИ</span>
+                </a>
+                <a href="https://elkatut.com/180sm" rel="dofollow" class="outreach__item">
+                    <img src="image/elkatut_com.webp" width="140" height="200" loading="lazy" alt="ялинка штучна" />
+                    <span class="outreach__name">ЯЛИНКА ШТУЧНА</span>
+                </a>
             </div>
         </section>
     </main>
@@ -292,7 +305,7 @@
                         <input type="text" id="town" name="town" placeholder="місто Корець" required>
                         <input type="text" id="post" name="post" placeholder="Відділеня НП або УП" required>
                         <input type="hidden" name="title" value="Монополія (банк без меж)">
-                        <input type="hidden" name="price" id="price" value="590">
+                        <input type="hidden" name="price" id="price" value="900">
                         <input type="hidden" name="payment" id="payment" value="cash">
                         <input type="hidden" name="service" id="service" value="nova">
                         <input type="submit" value="Готово">
